@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Chathura:wght@400;700&family=Tulpen+One&display=swap');
+
+
+$primaryFont:'Chathura', 'sans-serif';
+$secondaryFont: 'Tulpen One', 'cursive';
+
+
+
+body{
+  font-size: 125%;
+  color: white;
+  font-family: $primaryFont;
+  letter-spacing: 1.9px;
+}
+
+h1,h2,h3,p,ul,section{
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  list-style: none;
+}
+
+img{
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+
+.wrapper{
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto;
+}
+
