@@ -4,26 +4,23 @@ body{
   font-size: 1.95rem;
 }
 
-
 // header styles//
 
 h1{
   font-family: $secondaryFont;
   letter-spacing: 2.4px;
   font-size: 13rem;
-
-
 }
 
 h2{
   font-family: $secondaryFont;
 }
 
-header{
-  background-image: url('./images/contact-header-1.jpg);
+.contactPageHeader{
+  background-image:url(../images/contact-header-1.jpg);
   height: 50vh;
   background-repeat: no-repeat;
-  background-size: cover;                 
+  background-size: cover;           
 }
 
 .heroContent{
@@ -33,26 +30,6 @@ header{
   align-items: flex-start;
   height: 100%;
   padding-left: 100px;
-}
-
-.topNavContainer ul{
-  display: flex;
-  justify-content: center; 
-  height: 100px;
-  align-items: flex-end;
-}
-
-.topNavContainer ul li{
-  padding: 20px 50px;
-  
-} 
-
-.topNavContainer a{
-  color: white;
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 29px;
-  font-size: 1.9rem;
 }
 
 
