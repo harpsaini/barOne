@@ -1,0 +1,38 @@
+.blogPageHeader{
+ background-image: url('../images/blog-header-1.jpg'); 
+ background-size: contain;
+ height: 50vh;
+}
+
+.blogPageMainContent{
+  display: grid;
+  gap: 50px;
+  grid-template-columns: 30% 70%;
+  margin: 100px 0;
+}
+
+.blogHeroContent{
+  text-align: left;
+}
+
+.blogHeroContent h1{
+  font-family: $primaryFont;
+}
+
+
+aside{
+  background-color: $darkRed;
+  text-align: left;
+  
+}
+
+aside li{
+  list-style:disc;
+}
+
+// .sideBarImage{
+//   position: relative;
+//   right: -10px;
+//   top: -50px;
+// }
+

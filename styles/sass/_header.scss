@@ -1,0 +1,18 @@
+.topNavContainer ul{
+  display: flex;
+  justify-content: center; 
+  height: 100px;
+  align-items: flex-end;
+}
+
+.topNavContainer ul li{
+  padding: 20px 50px; 
+} 
+
+.topNavContainer a{
+  color: $offWhite;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 29px;
+  font-size: 1.9rem;
+}

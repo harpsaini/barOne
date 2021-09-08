@@ -266,31 +266,6 @@ a {
   text-decoration: none;
 }
 
-.topNavContainer ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 100px;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-.topNavContainer ul li {
-  padding: 20px 50px;
-}
-
-.topNavContainer a {
-  color: #ffffff;
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 29px;
-  font-size: 1.9rem;
-}
-
 body {
   text-align: center;
   font-size: 1.95rem;
@@ -553,4 +528,59 @@ body {
 
 footer {
   color: white;
+}
+
+.blogPageHeader {
+  background-image: url("../images/blog-header-1.jpg");
+  background-size: contain;
+  height: 50vh;
+}
+
+.blogPageMainContent {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: 30% 70%;
+  margin: 100px 0;
+}
+
+.blogHeroContent {
+  text-align: left;
+}
+
+.blogHeroContent h1 {
+  font-family: "Chathura", "sans-serif";
+}
+
+aside {
+  background-color: #220303;
+  text-align: left;
+}
+
+aside li {
+  list-style: disc;
+}
+
+.topNavContainer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.topNavContainer ul li {
+  padding: 20px 50px;
+}
+
+.topNavContainer a {
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 29px;
+  font-size: 1.9rem;
 }
