@@ -16,3 +16,13 @@
   line-height: 29px;
   font-size: 1.9rem;
 }
+
+.topNavContainer a:hover,
+.topNavContainer a:focus{
+  color: $orange;
+}
+
+header h2{
+  font-family: $secondaryFont;
+}
+

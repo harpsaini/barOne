@@ -16,14 +16,20 @@ body{
   height: 100%;
   display:flex ;
   flex-direction: column;
-  justify-content: center;
-  
+  justify-content: center; 
 }
 
 .indexHeroContent h1{
   color: #ff8327;
+ 
 }
 
+.indexHeroContent h1 span{
+  display: block;
+  font-family: $primaryFont;
+  color: white;
+  font-size: 4rem; 
+}
 
 .headerBoxImage{
   position:absolute;
@@ -71,67 +77,86 @@ body{
 }             
 
 .upperGalleryContainer li{
-  flex: 1 0 auto;
-  width: 40%;
+  flex: 1 0 33%;
 }
-
-// .upperGalleryContainer li:nth-child(1){
-//   position: relative;
-//   top: -50px;
-//   border-right: 20px solid $orange;
-//   border-bottom: 20px solid $orange;
- 
-// }
 
 .upperGalleryContainer li:nth-child(2){
   text-align: left;
-  padding: 250px;
+  align-self: center;
+  margin-left: 200px;
 }
 
 .upperGalleryContainer li:nth-child(3){
   text-align: right;
-  padding: 250px;
 }
 
-// .upperGalleryContainer li:nth-child(4){
-//   position: relative;
-//   bottom: -50px;
-//   border-left: 20px solid $orange;
-//   border-bottom: 20px solid $orange;
-// }
-
 .upperGalleryImage1{
-  border-right: 20px solid $orange;
-  border-bottom: 20px solid $orange;
+  box-shadow: 20px 20px $orange;
   position: relative;
   bottom: 100px;
   
 }
 
+.image2Container{
+  box-shadow: -20px 20px $orange;
+  display:  inline-block;
+  overflow: hidden;
+  height: max-content;
+  position: relative;
+  bottom: -100px;
+  margin-left: 200px
+  
+}
 
 .upperGalleryImage2{
-  border-left: 20px solid $orange;
-  border-bottom: 20px solid $orange;
-  position: relative;
-  top: 100px;
-  
+  display: block;
+  box-shadow: -20px 20px solid $orange;
+  max-width: 100%;
 }
 
 
 
+.eventSection{
+  margin: 200px 0;
+}
+
+.eventSection h2,
+.eventsSubSection h2{
+  color: $orange;  
+}
+
+.eventsSubSection{
+  display: flex;
+  text-align: left;
+  padding: 4rem;
+  gap: 4rem;
+}
+
+.eventsSubSection img{
+  box-shadow: -20px 20px $orange;
+}
+
+
+
+
+//  gallery styles //  
+
 .gallery{
   background-color: $darkRed;
+  padding: 4rem;
+  width: 100vw;
 }
 
 .gallery ul{
   display: flex;
   gap: 20px;
-  flex-wrap: wrap;}
+  flex-wrap: wrap; 
+}
 
 .gallery ul li{
-  width: calc(33% - 40px);
+  flex-grow: 1;
+  flex-basis: calc(33% - 40px);
 }
 
-footer{
-  color: white;
-}
+
+

@@ -249,7 +249,7 @@ body {
   letter-spacing: 1.9px;
 }
 
-h1, h2, h3, p, ul, section {
+h1, h2, h3, h4, p, ul, section {
   margin: 0;
   padding: 0;
 }
@@ -275,10 +275,6 @@ h1 {
   font-family: "Tulpen One", "cursive";
   letter-spacing: 2.4px;
   font-size: 13rem;
-}
-
-h2 {
-  font-family: "Tulpen One", "cursive";
 }
 
 .contactPageHeader {
@@ -308,7 +304,6 @@ h2 {
 
 main {
   background-color: #111010;
-  height: calc(50vh - 50px);
 }
 
 .lowerNavSection {
@@ -346,9 +341,8 @@ p span {
   display: block;
 }
 
-form {
-  height: 500px;
-  width: 60%;
+.form1 {
+  width: 50%;
   -webkit-box-shadow: 10px 10px #ff8327;
           box-shadow: 10px 10px #ff8327;
   position: absolute;
@@ -356,48 +350,12 @@ form {
   background-color: #220303;
   bottom: 100px;
   padding: 20px;
+  color: #ffffff;
 }
 
-input {
-  border: none;
+.form1 input,
+.form1 textarea {
   background-color: #220303;
-  border-bottom: 2px solid white;
-  color: white;
-  width: calc(50% - 10px);
-  padding: 20px 20px;
-}
-
-textarea {
-  background-color: #220303;
-  border: 2px solid white;
-  resize: none;
-  width: 100%;
-  height: 200px;
-  margin-top: 50px;
-  color: white;
-  padding: 20px;
-}
-
-button {
-  width: 100%;
-  background-color: red;
-  color: white;
-  margin: 50px 20px;
-  padding: 10px;
-}
-
-footer {
-  background-color: darkgrey;
-  height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 body {
@@ -429,6 +387,13 @@ body {
 
 .indexHeroContent h1 {
   color: #ff8327;
+}
+
+.indexHeroContent h1 span {
+  display: block;
+  font-family: "Chathura", "sans-serif";
+  color: white;
+  font-size: 4rem;
 }
 
 .headerBoxImage {
@@ -480,37 +445,75 @@ body {
 
 .upperGalleryContainer li {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
-  width: 40%;
+      -ms-flex: 1 0 33%;
+          flex: 1 0 33%;
 }
 
 .upperGalleryContainer li:nth-child(2) {
   text-align: left;
-  padding: 250px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-left: 200px;
 }
 
 .upperGalleryContainer li:nth-child(3) {
   text-align: right;
-  padding: 250px;
 }
 
 .upperGalleryImage1 {
-  border-right: 20px solid #ff8327;
-  border-bottom: 20px solid #ff8327;
+  -webkit-box-shadow: 20px 20px #ff8327;
+          box-shadow: 20px 20px #ff8327;
   position: relative;
   bottom: 100px;
 }
 
-.upperGalleryImage2 {
-  border-left: 20px solid #ff8327;
-  border-bottom: 20px solid #ff8327;
+.image2Container {
+  -webkit-box-shadow: -20px 20px #ff8327;
+          box-shadow: -20px 20px #ff8327;
+  display: inline-block;
+  overflow: hidden;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   position: relative;
-  top: 100px;
+  bottom: -100px;
+  margin-left: 200px;
+}
+
+.upperGalleryImage2 {
+  display: block;
+  -webkit-box-shadow: -20px 20px solid #ff8327;
+          box-shadow: -20px 20px solid #ff8327;
+  max-width: 100%;
+}
+
+.eventSection {
+  margin: 200px 0;
+}
+
+.eventSection h2,
+.eventsSubSection h2 {
+  color: #ff8327;
+}
+
+.eventsSubSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  padding: 4rem;
+  gap: 4rem;
+}
+
+.eventsSubSection img {
+  -webkit-box-shadow: -20px 20px #ff8327;
+          box-shadow: -20px 20px #ff8327;
 }
 
 .gallery {
   background-color: #220303;
+  padding: 4rem;
+  width: 100vw;
 }
 
 .gallery ul {
@@ -523,24 +526,17 @@ body {
 }
 
 .gallery ul li {
-  width: calc(33% - 40px);
-}
-
-footer {
-  color: white;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: calc(33% - 40px);
+      flex-basis: calc(33% - 40px);
 }
 
 .blogPageHeader {
   background-image: url("../images/blog-header-1.jpg");
   background-size: contain;
   height: 50vh;
-}
-
-.blogPageMainContent {
-  display: grid;
-  gap: 50px;
-  grid-template-columns: 30% 70%;
-  margin: 100px 0;
 }
 
 .blogHeroContent {
@@ -551,13 +547,78 @@ footer {
   font-family: "Chathura", "sans-serif";
 }
 
+.blogPageMainContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8rem;
+  margin: 100px 0;
+}
+
 aside {
-  background-color: #220303;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 33%;
+          flex: 1 0 33%;
   text-align: left;
+  justify-self: start;
+  background-color: #220303;
+  margin-left: 8rem;
+  height: 50%;
 }
 
 aside li {
   list-style: disc;
+}
+
+.sideBarImage {
+  position: relative;
+  left: -30px;
+  top: -30px;
+}
+
+.sideBarContent {
+  padding: 2rem;
+}
+
+.sideBarContent ul {
+  padding-left: 4rem;
+}
+
+.blogPostImage {
+  -webkit-box-shadow: -20px 20px #ff8327;
+          box-shadow: -20px 20px #ff8327;
+  position: relative;
+  bottom: 200px;
+  overflow: hidden;
+}
+
+.blogPostContent {
+  border-left: 5px solid #ff8327;
+  border-bottom: 5px solid #ff8327;
+  position: relative;
+  left: -20px;
+  bottom: 200px;
+  padding: 4rem;
+  text-align: left;
+}
+
+.commentSection ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  gap: 2rem;
+}
+
+.form2 {
+  width: 80%;
+  background-color: #111010;
+  margin-top: 4rem;
+}
+
+.form2 input,
+.form2 textarea {
+  background-color: #111010;
 }
 
 .topNavContainer ul {
@@ -583,4 +644,64 @@ aside li {
   text-transform: uppercase;
   line-height: 29px;
   font-size: 1.9rem;
+}
+
+.topNavContainer a:hover,
+.topNavContainer a:focus {
+  color: #ff8327;
+}
+
+header h2 {
+  font-family: "Tulpen One", "cursive";
+}
+
+footer {
+  background-color: grey;
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  color: #ffffff;
+  width: calc(50% - 10px);
+  padding: 20px 20px;
+}
+
+textarea {
+  border: 2px solid #ffffff;
+  resize: none;
+  width: 100%;
+  height: 200px;
+  margin: 50px 0;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.button {
+  width: 100%;
+  background-color: red;
+  color: white;
+  padding: 10px;
+}
+
+/* Portrait tablet and small desktops */
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .form1 {
+    width: 90%;
+    position: static;
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 7rem;
+  }
+
+  .gallery ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }

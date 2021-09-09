@@ -4,13 +4,6 @@
  height: 50vh;
 }
 
-.blogPageMainContent{
-  display: grid;
-  gap: 50px;
-  grid-template-columns: 30% 70%;
-  margin: 100px 0;
-}
-
 .blogHeroContent{
   text-align: left;
 }
@@ -19,20 +12,77 @@
   font-family: $primaryFont;
 }
 
+.blogPageMainContent{
+  display: flex;
+  gap: 8rem;
+  margin: 100px 0;
+}
 
 aside{
-  background-color: $darkRed;
+  flex: 1 0 33%;
   text-align: left;
-  
+  justify-self: start;
+  background-color: $darkRed;
+  margin-left: 8rem;  
+  height: 50%;
 }
 
 aside li{
   list-style:disc;
 }
 
-// .sideBarImage{
-//   position: relative;
-//   right: -10px;
-//   top: -50px;
+.sideBarImage{
+ position: relative;
+ left: -30px;
+ top: -30px;
+}
+
+.sideBarContent{
+  padding: 2rem;
+  
+}
+
+.sideBarContent ul{
+  padding-left: 4rem;
+}
+
+.blogPostImage{
+  box-shadow: -20px 20px $orange;
+  position: relative;
+  bottom: 200px;
+  overflow: hidden;
+}
+
+.blogPostContent{
+  border-left: 5px solid$orange;
+  border-bottom: 5px solid$orange;
+  position: relative;
+  left: -20px;  
+  bottom: 200px;
+  padding: 4rem;
+  text-align: left; 
+}
+
+.commentSection ul li{
+  display: flex;
+  text-align: left;
+  gap: 2rem;
+}
+
+// .commentImage{
+//   width: 6rem;
+//   display: inline-block;
 // }
+
+
+.form2{
+  width: 80%;
+  background-color: $black;
+  margin-top: 4rem;
+}
+
+.form2 input,
+.form2 textarea{
+  background-color: $black;
+}
 
