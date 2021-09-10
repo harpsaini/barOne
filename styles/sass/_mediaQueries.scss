@@ -7,21 +7,37 @@
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+
+  .topNavContainer ul,
+  .mainPageNavigationContainer,
+  .gallery ul,
+  .blogPageMainContent{
+      flex-direction: column;
+    }
+    
   .form1{
     width: 90%;
     position: static;
   }
+
+  aside{
+    width: 100%;
+    margin: 1rem;
+    padding-bottom: 2rem;
+  }
+  
 }
 
 /* Landscape phones and down */
 @media (max-width: 600px) {
   h1{
-    font-size: 7rem;
-  }
-
-  .gallery ul{
-    flex-direction: column;
+    font-size: 5rem;
   }
 
   
+.upperGalleryContainer li{
+  width: 100%;
+  margin: 1rem;
+}
+
 }

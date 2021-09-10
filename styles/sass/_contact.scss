@@ -1,16 +1,6 @@
 
-body{
-  text-align: center;
-  font-size: 1.95rem;
-}
 
 // header styles//
-
-h1{
-  font-family: $secondaryFont;
-  letter-spacing: 2.4px;
-  font-size: 13rem;
-}
 
 .contactPageHeader{
   background-image:url(../images/contact-header-1.jpg);
@@ -39,13 +29,14 @@ main{
 
 .lowerNavSection{
   display: flex;
-  height: 100%; 
   flex-direction: column;
   justify-content: center;
   text-align: left;
   width: 20%;
   margin: 0 100px; 
-  
+  padding: 4rem 0;  
+  flex-wrap: wrap;
+  font-weight: bold;
 }
 
 .lowerNavSection nav ul{
@@ -82,4 +73,8 @@ p span{
 .form1 input,
 .form1 textarea{
   background-color: $darkRed;
+}
+
+button{
+  width: 100%;
 }

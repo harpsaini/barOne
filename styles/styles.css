@@ -247,6 +247,8 @@ body {
   color: #ffffff;
   font-family: "Chathura", "sans-serif";
   letter-spacing: 1.9px;
+  background-color: #111010;
+  text-align: center;
 }
 
 h1, h2, h3, h4, p, ul, section {
@@ -264,17 +266,6 @@ img {
 
 a {
   text-decoration: none;
-}
-
-body {
-  text-align: center;
-  font-size: 1.95rem;
-}
-
-h1 {
-  font-family: "Tulpen One", "cursive";
-  letter-spacing: 2.4px;
-  font-size: 13rem;
 }
 
 .contactPageHeader {
@@ -310,7 +301,6 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -321,6 +311,10 @@ main {
   text-align: left;
   width: 20%;
   margin: 0 100px;
+  padding: 4rem 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-weight: bold;
 }
 
 .lowerNavSection nav ul {
@@ -358,8 +352,8 @@ p span {
   background-color: #220303;
 }
 
-body {
-  background-color: #111010;
+button {
+  width: 100%;
 }
 
 .indexPageHeader {
@@ -387,13 +381,14 @@ body {
 
 .indexHeroContent h1 {
   color: #ff8327;
+  font-family: "Tulpen One", "cursive";
 }
 
 .indexHeroContent h1 span {
   display: block;
   font-family: "Chathura", "sans-serif";
   color: white;
-  font-size: 4rem;
+  font-size: 4.16rem;
 }
 
 .headerBoxImage {
@@ -441,6 +436,13 @@ body {
   background-color: #220303;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 8rem;
+}
+
+.upperGalleryContainer h2 {
+  font-size: 3.4rem;
+  line-height: 2.9rem;
+  letter-spacing: 2.2px;
 }
 
 .upperGalleryContainer li {
@@ -451,9 +453,9 @@ body {
 
 .upperGalleryContainer li:nth-child(2) {
   text-align: left;
-  -ms-flex-item-align: center;
-      align-self: center;
-  margin-left: 200px;
+  margin-left: 8rem;
+  font-size: 1.95rem;
+  padding-top: 4rem;
 }
 
 .upperGalleryContainer li:nth-child(3) {
@@ -477,7 +479,7 @@ body {
   height: max-content;
   position: relative;
   bottom: -100px;
-  margin-left: 200px;
+  margin-left: 8rem;
 }
 
 .upperGalleryImage2 {
@@ -488,12 +490,27 @@ body {
 }
 
 .eventSection {
-  margin: 200px 0;
+  margin-bottom: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .eventSection h2,
 .eventsSubSection h2 {
   color: #ff8327;
+  font-size: 3.4rem;
 }
 
 .eventsSubSection {
@@ -503,24 +520,42 @@ body {
   text-align: left;
   padding: 4rem;
   gap: 4rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .eventsSubSection img {
   -webkit-box-shadow: -20px 20px #ff8327;
           box-shadow: -20px 20px #ff8327;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 30%;
+          flex: 1 0 30%;
+}
+
+.eventSubSectionContent {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 60%;
+          flex: 1 0 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4rem;
 }
 
 .gallery {
   background-color: #220303;
   padding: 4rem;
-  width: 100vw;
 }
 
 .gallery ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
+  gap: 2rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -529,8 +564,8 @@ body {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  -ms-flex-preferred-size: calc(33% - 40px);
-      flex-basis: calc(33% - 40px);
+  -ms-flex-preferred-size: calc(33% - 4rem);
+      flex-basis: calc(33% - 4rem);
 }
 
 .blogPageHeader {
@@ -651,6 +686,12 @@ aside li {
   color: #ff8327;
 }
 
+h1 {
+  font-family: "Chathura", "sans-serif";
+  letter-spacing: 2.4px;
+  font-size: 13rem;
+}
+
 header h2 {
   font-family: "Tulpen One", "cursive";
 }
@@ -678,7 +719,7 @@ textarea {
 }
 
 .button {
-  width: 100%;
+  font-family: "Tulpen One", "cursive";
   background-color: red;
   color: white;
   padding: 10px;
@@ -687,21 +728,35 @@ textarea {
 /* Portrait tablet and small desktops */
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+  .topNavContainer ul,
+.mainPageNavigationContainer,
+.gallery ul,
+.blogPageMainContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
   .form1 {
     width: 90%;
     position: static;
+  }
+
+  aside {
+    width: 100%;
+    margin: 1rem;
+    padding-bottom: 2rem;
   }
 }
 /* Landscape phones and down */
 @media (max-width: 600px) {
   h1 {
-    font-size: 7rem;
+    font-size: 5rem;
   }
 
-  .gallery ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .upperGalleryContainer li {
+    width: 100%;
+    margin: 1rem;
   }
 }
