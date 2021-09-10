@@ -66,19 +66,14 @@ aside li{
 .commentSection ul li{
   display: flex;
   text-align: left;
-  gap: 2rem;
+  gap: 2rem;  
 }
-
-// .commentImage{
-//   width: 6rem;
-//   display: inline-block;
-// }
-
 
 .form2{
   width: 80%;
   background-color: $black;
   margin-top: 4rem;
+  padding: 1rem;
 }
 
 .form2 input,
