@@ -25,6 +25,17 @@
     padding-bottom: 2rem;
   }
   
+
+  .topNavContainer ul {
+    position: fixed;
+    right: -175px;
+    top:100px;
+  }
+
+  .topNavContainer label{
+    display: block;
+  }
+
 }
 
 /* Landscape phones and down */

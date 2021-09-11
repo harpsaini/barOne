@@ -32,3 +32,23 @@ header h2{
   font-family: $secondaryFont;
 }
 
+
+input[type="checkbox"]:checked + ul.hamburgerMenu {
+	right: 0;
+  padding-top: 100px;
+}
+
+.topNavContainer label{
+  display: none;
+}
+
+
+label[for="toggle"] {
+	/*position the menu so that it doesn't slide off screen when we open it*/
+	position: fixed;
+	top: 2px;
+	right: 20px;
+	color: white;
+	
+}
+

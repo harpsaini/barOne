@@ -423,6 +423,7 @@ button {
   border-radius: 50%;
   width: 40px;
   height: 40px;
+  font-size: 2rem;
 }
 
 .mainPageNavigationContent {
@@ -697,6 +698,23 @@ header h2 {
   font-family: "Tulpen One", "cursive";
 }
 
+input[type=checkbox]:checked + ul.hamburgerMenu {
+  right: 0;
+  padding-top: 100px;
+}
+
+.topNavContainer label {
+  display: none;
+}
+
+label[for=toggle] {
+  /*position the menu so that it doesn't slide off screen when we open it*/
+  position: fixed;
+  top: 2px;
+  right: 20px;
+  color: white;
+}
+
 footer {
   background-color: grey;
 }
@@ -747,6 +765,16 @@ textarea {
   aside {
     margin: 1rem;
     padding-bottom: 2rem;
+  }
+
+  .topNavContainer ul {
+    position: fixed;
+    right: -175px;
+    top: 100px;
+  }
+
+  .topNavContainer label {
+    display: block;
   }
 }
 /* Landscape phones and down */
