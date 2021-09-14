@@ -1,7 +1,6 @@
 .topNavContainer ul{
   display: flex;
   justify-content: center; 
-  height: 100px;
   align-items: flex-end;
 }
 
@@ -32,23 +31,62 @@ header h2{
   font-family: $secondaryFont;
 }
 
+// hamburgerMenu styles 
 
-input[type="checkbox"]:checked + ul.hamburgerMenu {
-	right: 0;
-  padding-top: 100px;
-}
-
-.topNavContainer label{
+.menuBtn{
+  display: flex;
+  width: 80px;
+  height: 80px;
+  position:absolute;
+  right: 50px;
+  top: 50px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  text-align:justify;
   display: none;
 }
 
 
-label[for="toggle"] {
-	/*position the menu so that it doesn't slide off screen when we open it*/
-	position: fixed;
-	top: 2px;
-	right: 20px;
-	color: white;
-	
+.menuBtnBurger{
+  position: absolute;
+  width: 60px;
+  height: 6px;
+  background-color: white;
+  border-radius: 50px;
+  transition: all .5s ease-in-out;
+}
+
+.menuBtnBurger::before,
+.menuBtnBurger::after{
+  content: ' ';
+  width: 60px;
+  height: 6px;
+  background-color: white;
+  border-radius: 50px;
+  position: absolute;
+  transition: all .5s ease-in-out;
+  position: absolute;
+}
+
+.menuBtnBurger::before{
+  transform:translateY(-15px);
+}
+
+.menuBtnBurger::after{
+  transform: translateY(15px);
+}
+
+.menuBtn.open .menuBtnBurger{
+  transform: translateX(-20px);
+  background: transparent;
+}
+
+.menuBtn.open .menuBtnBurger::before{
+  transform: rotate(45deg) ;
+}
+
+.menuBtn.open .menuBtnBurger::after{
+  transform: rotate(-45deg) ;
 }
 

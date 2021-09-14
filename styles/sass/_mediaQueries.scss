@@ -1,9 +1,6 @@
 // media queries // 
 
 
-/* Portrait tablet and small desktops */
-@media (max-width: 940px) {
-}
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
@@ -24,18 +21,17 @@
     margin: 1rem;
     padding-bottom: 2rem;
   }
-  
 
-  .topNavContainer ul {
+  .topNavContainer ul{
     position: fixed;
-    right: -175px;
     top:100px;
+    right:-200px;
+    width: 200px;
   }
-
-  .topNavContainer label{
+    
+  .menuBtn{
     display: block;
   }
-
 }
 
 /* Landscape phones and down */
@@ -44,7 +40,6 @@
     font-size: 5rem;
   }
 
-  
 .upperGalleryContainer li{
   width: 100%;
   margin: 1rem;

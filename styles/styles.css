@@ -665,7 +665,6 @@ aside li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100px;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -698,21 +697,73 @@ header h2 {
   font-family: "Tulpen One", "cursive";
 }
 
-input[type=checkbox]:checked + ul.hamburgerMenu {
-  right: 0;
-  padding-top: 100px;
-}
-
-.topNavContainer label {
+.menuBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  cursor: pointer;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: justify;
   display: none;
 }
 
-label[for=toggle] {
-  /*position the menu so that it doesn't slide off screen when we open it*/
-  position: fixed;
-  top: 2px;
-  right: 20px;
-  color: white;
+.menuBtnBurger {
+  position: absolute;
+  width: 60px;
+  height: 6px;
+  background-color: white;
+  border-radius: 50px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.menuBtnBurger::before,
+.menuBtnBurger::after {
+  content: " ";
+  width: 60px;
+  height: 6px;
+  background-color: white;
+  border-radius: 50px;
+  position: absolute;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+}
+
+.menuBtnBurger::before {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+}
+
+.menuBtnBurger::after {
+  -webkit-transform: translateY(15px);
+          transform: translateY(15px);
+}
+
+.menuBtn.open .menuBtnBurger {
+  -webkit-transform: translateX(-20px);
+          transform: translateX(-20px);
+  background: transparent;
+}
+
+.menuBtn.open .menuBtnBurger::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.menuBtn.open .menuBtnBurger::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 footer {
@@ -744,7 +795,6 @@ textarea {
   padding: 10px;
 }
 
-/* Portrait tablet and small desktops */
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
   .topNavContainer ul,
@@ -769,11 +819,12 @@ textarea {
 
   .topNavContainer ul {
     position: fixed;
-    right: -175px;
     top: 100px;
+    right: -200px;
+    width: 200px;
   }
 
-  .topNavContainer label {
+  .menuBtn {
     display: block;
   }
 }
