@@ -268,14 +268,21 @@ a {
   text-decoration: none;
 }
 
+.button {
+  font-family: "Tulpen One", "cursive";
+  background-color: red;
+  color: white;
+  padding: 10px;
+  width: 8rem;
+}
+
 .contactPageHeader {
   background-image: url(../images/contact-header-1.jpg);
-  height: 50vh;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.heroContent {
+.contactPageHeader .heroContent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -289,12 +296,7 @@ a {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  height: 100%;
-  padding-left: 100px;
-}
-
-main {
-  background-color: #111010;
+  min-height: 50vh;
 }
 
 .lowerNavSection {
@@ -309,22 +311,18 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: left;
-  width: 20%;
-  margin: 0 100px;
-  padding: 4rem 0;
+  padding: 2rem 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  font-weight: bold;
+  font-size: 1.95rem;
+  gap: 2rem;
 }
 
 .lowerNavSection nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.lowerNavSection nav li {
-  padding-right: 20px;
+  gap: 2rem;
 }
 
 .lowerNavSection a {
@@ -333,27 +331,6 @@ main {
 
 p span {
   display: block;
-}
-
-.form1 {
-  width: 50%;
-  -webkit-box-shadow: 10px 10px #ff8327;
-          box-shadow: 10px 10px #ff8327;
-  position: absolute;
-  right: 50px;
-  background-color: #220303;
-  bottom: 100px;
-  padding: 20px;
-  color: #ffffff;
-}
-
-.form1 input,
-.form1 textarea {
-  background-color: #220303;
-}
-
-button {
-  width: 100%;
 }
 
 .indexPageHeader {
@@ -438,6 +415,7 @@ button {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 8rem;
+  gap: 4rem;
 }
 
 .upperGalleryContainer h2 {
@@ -447,40 +425,36 @@ button {
 }
 
 .upperGalleryContainer li {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 33%;
-          flex: 1 0 33%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(50% - 4rem);
+          flex: 0 0 calc(50% - 4rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+  font-size: 1.9rem;
 }
 
 .upperGalleryContainer li:nth-child(2) {
   text-align: left;
-  margin-left: 8rem;
-  font-size: 1.95rem;
-  padding-top: 4rem;
 }
 
 .upperGalleryContainer li:nth-child(3) {
   text-align: right;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .upperGalleryImage1 {
   -webkit-box-shadow: 20px 20px #ff8327;
           box-shadow: 20px 20px #ff8327;
   position: relative;
-  bottom: 100px;
-}
-
-.image2Container {
-  -webkit-box-shadow: -20px 20px #ff8327;
-          box-shadow: -20px 20px #ff8327;
-  display: inline-block;
-  overflow: hidden;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  position: relative;
-  bottom: -100px;
-  margin-left: 8rem;
+  bottom: 50px;
 }
 
 .upperGalleryImage2 {
@@ -488,6 +462,10 @@ button {
   -webkit-box-shadow: -20px 20px solid #ff8327;
           box-shadow: -20px 20px solid #ff8327;
   max-width: 100%;
+  -webkit-box-shadow: -20px 20px #ff8327;
+          box-shadow: -20px 20px #ff8327;
+  position: relative;
+  bottom: -50px;
 }
 
 .eventSection {
@@ -506,6 +484,7 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: 1.9rem;
 }
 
 .eventSection h2,
@@ -545,6 +524,7 @@ button {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 4rem;
+  font-size: 1.9rem;
 }
 
 .gallery {
@@ -571,12 +551,26 @@ button {
 
 .blogPageHeader {
   background-image: url("../images/blog-header-1.jpg");
-  background-size: contain;
-  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .blogHeroContent {
-  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  min-height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .blogHeroContent h1 {
@@ -587,8 +581,8 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 8rem;
-  margin: 100px 0;
+  gap: 4rem;
+  font-size: 1.9rem;
 }
 
 aside {
@@ -596,10 +590,11 @@ aside {
       -ms-flex: 1 0 33%;
           flex: 1 0 33%;
   text-align: left;
-  justify-self: start;
   background-color: #220303;
-  margin-left: 8rem;
-  height: 50%;
+  margin: 4rem 0;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 aside li {
@@ -609,10 +604,18 @@ aside li {
 .sideBarImage {
   position: relative;
   left: -30px;
-  top: -30px;
+  top: -10px;
 }
 
 .sideBarContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
   padding: 2rem;
 }
 
@@ -624,8 +627,7 @@ aside li {
   -webkit-box-shadow: -20px 20px #ff8327;
           box-shadow: -20px 20px #ff8327;
   position: relative;
-  bottom: 200px;
-  overflow: hidden;
+  top: -10px;
 }
 
 .blogPostContent {
@@ -633,9 +635,20 @@ aside li {
   border-bottom: 5px solid #ff8327;
   position: relative;
   left: -20px;
-  bottom: 200px;
   padding: 4rem;
   text-align: left;
+}
+
+.commentSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+  margin-top: 4rem;
 }
 
 .commentSection ul li {
@@ -643,19 +656,14 @@ aside li {
   display: -ms-flexbox;
   display: flex;
   text-align: left;
-  gap: 2rem;
+  gap: 4rem;
+  padding: 2rem;
 }
 
-.form2 {
-  width: 80%;
-  background-color: #111010;
-  margin-top: 4rem;
-  padding: 1rem;
-}
-
-.form2 input,
-.form2 textarea {
-  background-color: #111010;
+.commentImage {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 
 .topNavContainer ul {
@@ -693,19 +701,25 @@ h1 {
   font-size: 13rem;
 }
 
+header p {
+  font-family: "Tulpen One", "cursive";
+  font-size: 2rem;
+}
+
 header h2 {
   font-family: "Tulpen One", "cursive";
+  font-size: 10rem;
 }
 
 .menuBtn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 80px;
-  height: 80px;
+  width: 4rem;
+  height: 4rem;
   position: absolute;
-  right: 50px;
-  top: 50px;
+  right: 1rem;
+  top: 2rem;
   cursor: pointer;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -719,7 +733,7 @@ header h2 {
 
 .menuBtnBurger {
   position: absolute;
-  width: 60px;
+  width: 3rem;
   height: 6px;
   background-color: white;
   border-radius: 50px;
@@ -730,7 +744,7 @@ header h2 {
 .menuBtnBurger::before,
 .menuBtnBurger::after {
   content: " ";
-  width: 60px;
+  width: 3rem;
   height: 6px;
   background-color: white;
   border-radius: 50px;
@@ -741,13 +755,13 @@ header h2 {
 }
 
 .menuBtnBurger::before {
-  -webkit-transform: translateY(-15px);
-          transform: translateY(-15px);
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 .menuBtnBurger::after {
-  -webkit-transform: translateY(15px);
-          transform: translateY(15px);
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
 }
 
 .menuBtn.open .menuBtnBurger {
@@ -768,35 +782,76 @@ header h2 {
 
 footer {
   background-color: grey;
+  min-height: 5vh;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 input {
   border: none;
   border-bottom: 2px solid #ffffff;
   color: #ffffff;
-  width: calc(50% - 10px);
-  padding: 20px 20px;
+  padding: 10px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 calc(40% - 2rem);
+          flex: 1 1 calc(40% - 2rem);
 }
 
 textarea {
   border: 2px solid #ffffff;
   resize: none;
   width: 100%;
-  height: 200px;
-  margin: 50px 0;
+  min-height: 10rem;
   color: #ffffff;
-  padding: 20px;
-}
-
-.button {
-  font-family: "Tulpen One", "cursive";
-  background-color: red;
-  color: white;
   padding: 10px;
 }
 
+Form {
+  width: 80%;
+  background-color: #111010;
+  margin: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+  font-size: 1.5rem;
+}
+
+.form2 input,
+.form2 textarea {
+  background-color: #111010;
+}
+
+.form1 input,
+.form1 textarea {
+  background-color: #220303;
+}
+
+.form1 {
+  width: 50%;
+  -webkit-box-shadow: 10px 10px #ff8327;
+          box-shadow: 10px 10px #ff8327;
+  position: absolute;
+  right: 4rem;
+  background-color: #220303;
+  bottom: 2rem;
+  padding: 20px;
+  color: #ffffff;
+}
+
 /* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .topNavContainer ul,
 .mainPageNavigationContainer,
 .gallery ul,
@@ -805,6 +860,14 @@ textarea {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+
+  header h2 {
+    font-size: 7rem;
+  }
+
+  .blogHeroContent h2 {
+    font-size: 9rem;
   }
 
   .form1 {
@@ -834,8 +897,21 @@ textarea {
     font-size: 5rem;
   }
 
-  .upperGalleryContainer li {
-    width: 100%;
-    margin: 1rem;
+  header h2 {
+    font-size: 5rem;
+  }
+
+  .upperGalleryContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 2rem;
+  }
+
+  .eventSubSectionContent {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }

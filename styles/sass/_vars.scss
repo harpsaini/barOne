@@ -41,3 +41,10 @@ a{
   text-decoration: none;
 }
 
+.button{
+  font-family: $secondaryFont;
+  background-color: red;
+  color: white;
+  padding: 10px;
+  width: 8rem;
+}
