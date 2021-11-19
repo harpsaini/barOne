@@ -1,30 +1,35 @@
 .blogPageHeader{
  background-image: url('../images/blog-header-1.jpg'); 
- background-size: contain;
- height: 50vh;
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
 }
 
 .blogHeroContent{
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
+  justify-content: center;
 }
 
 .blogHeroContent h1{
   font-family: $primaryFont;
 }
 
+
 .blogPageMainContent{
   display: flex;
-  gap: 8rem;
-  margin: 100px 0;
+  gap: 4rem;
+  font-size: 1.9rem;
 }
 
 aside{
   flex: 1 0 33%;
   text-align: left;
-  justify-self: start;
   background-color: $darkRed;
-  margin-left: 8rem;  
-  height: 50%;
+  margin: 4rem 0;
+  height: max-content;
 }
 
 aside li{
@@ -34,12 +39,14 @@ aside li{
 .sideBarImage{
  position: relative;
  left: -30px;
- top: -30px;
+ top: -10px;
 }
 
 .sideBarContent{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   padding: 2rem;
-  
 }
 
 .sideBarContent ul{
@@ -49,8 +56,7 @@ aside li{
 .blogPostImage{
   box-shadow: -20px 20px $orange;
   position: relative;
-  bottom: 200px;
-  overflow: hidden;
+  top: -10px;
 }
 
 .blogPostContent{
@@ -58,26 +64,25 @@ aside li{
   border-bottom: 5px solid$orange;
   position: relative;
   left: -20px;  
-  bottom: 200px;
   padding: 4rem;
   text-align: left; 
+}
+
+.commentSection{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 4rem;
 }
 
 .commentSection ul li{
   display: flex;
   text-align: left;
-  gap: 2rem;  
+  gap: 4rem;  
+  padding: 2rem;
 }
 
-.form2{
-  width: 80%;
-  background-color: $black;
-  margin-top: 4rem;
-  padding: 1rem;
-}
-
-.form2 input,
-.form2 textarea{
-  background-color: $black;
+.commentImage{
+ flex: 1 0 auto
 }
 

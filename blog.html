@@ -18,14 +18,14 @@
         <ul>
           <li><a href="./index.html">Home</a></li>
           <li><a href="">about</a></li>
-          <li><h2>Bar-One</h2></li>
+          <li><p>Bar-One</p></li>
           <li><a href="">blog</a></li>
           <li><a href="./contact.html">contact</a></li>
         </ul>
       </div>
     </nav>
     <div class="blogHeroContent wrapper">
-      <h1>Blog</h1> 
+      <h2>Blog</h2> 
     </div>
   </header>
   <main>
@@ -38,7 +38,7 @@
         <div class="sideBarContent">
           <h3>Our Mission</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam corrupti voluptatem minima?</p>
-          <a href="#">Find out more</a>
+          <a class="button" href="#">Find out more</a>
 
           <h3>Recent Posts</h3>
           <ul>
@@ -73,7 +73,6 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ad veniam qui rem, iure itaque placeat cum autem laudantium quia culpa soluta alias excepturi nesciunt accusamus eaque eius suscipit, id fugiat architecto a.</p>
               </div>
             </li>
-
             <li>
               <div class="commentImage">
                 <img src="./images/comment-image-2.jpg" alt="AnotherPatron">
@@ -86,17 +85,17 @@
             </li>
           </ul>
         </div>
-        <div class="form2">
-          <form action="" method="post" name="contactForm">
+          <form class="form2 action="" method="post" name="contactForm">
             <label class="sr-only" for="Name">Name</label>
             <input type="text" name="Name" id="Name" placeholder="Name">
             <label class="sr-only" for="email">Email Address</label>
             <input type="email" name="email" id="email" placeholder="Email Address">
             <label class="sr-only" for="message">Comment</label>
             <textarea name="message" id="message" placeholder="Message"></textarea>
-            <button class="button" type="submit">Post Comment</button>
+            <div class="formsubmitbutton">
+           <button class="button" type="submit">Post Comment</button>
+            </div>
           </form>
-        </div>
       </article>
     </section>
   </main>

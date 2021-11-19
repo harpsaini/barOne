@@ -1,9 +1,8 @@
 // media queries // 
 
 
-
 /* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
 
   .topNavContainer ul,
   .mainPageNavigationContainer,
@@ -11,7 +10,13 @@
   .blogPageMainContent{
       flex-direction: column;
     }
-    
+
+    header h2{
+      font-size: 7rem;
+    }
+    .blogHeroContent h2{
+      font-size: 9rem;
+    }
   .form1{
     width: 90%;
     position: static;
@@ -40,9 +45,16 @@
     font-size: 5rem;
   }
 
-.upperGalleryContainer li{
-  width: 100%;
-  margin: 1rem;
-}
+  header h2{
+    font-size: 5rem;
+  }
+  .upperGalleryContainer{
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .eventSubSectionContent{
+    align-items: center;
+  }
 
 }
